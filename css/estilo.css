@@ -36,9 +36,56 @@ p a {
 
 /******Seletor de irmão adjacente*****
 
-obs: paragrafo logo abaixo de h1(irmao posterior)
+obs: paragrafo logo abaixo de h1(irmao posterior )
 h1+p {
 	color: black;
 }
 
+******Herança e Especificidade*********
+Observação: Por padrão o border e o background nao são herdados;
+
+* {
+	border: 1px solid blue;//neste caso irá funcionar pois 
+							 estamos aplicando em todos os 
+							 elemento
+}
+
+body {
+	color: red;
+	font-size: 25px;
+	border: 1px solid blue;
+	background: gray;
+}
+*********Seletores iguais, exceção important
+p {
+	color: blue !important;
+}
+
+p {
+	color: red;
+}
+OBS: No caso de DOIS seletores iguais sempre o ultimo vai
+		ser aplicado. A exceção é o !important, que vai 
+		dizer esse atributo é mais importante que qualquer 
+		outro.
+		Não utilizar o IMPORTANT com frequencia, pois pode 
+		tornar o codigo confuso.
+
+	Se um seletor for mais específico que o outro a regra mais
+	especifica será aplicada
+	(tera precedencia sobre regras mais gerais)
 */
+* {
+	color: red;
+}
+h2 {
+	color: blue;
+}
+
+h2.verde {
+	color: green;
+}
+h2#amarelo {
+	color: yellow;
+}
+
