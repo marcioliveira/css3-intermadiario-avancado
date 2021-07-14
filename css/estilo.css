@@ -102,7 +102,8 @@ li {
 	border: 1px solid red;
 	background: url(../imagens/seta.png) no-repeat left center;
 }
-*/
+
+****Barra de navegacao vertical com marcacao na pagina atual************************
 
 ul {
   margin: 0;
@@ -122,7 +123,7 @@ ul a {
 }
 
 a:hover {
-  background-position: right bottom; /*movimenta a imagem*/
+  background-position: right bottom; /*movimenta a imagem
   background-color: #f99200;
   color: #fff;
 }
@@ -132,7 +133,51 @@ a:hover {
 #servicos #navegacao .servicos a,
 #noticias #navegacao .noticias a,
 #contato #navegacao .contato a {
-  background-position: right bottom; /*movimenta a imagem*/
+  background-position: right bottom; /*movimenta a imagem
   background-color: #f99200;
   color: #fff;
+}
+
+*/
+/**************************************************
+********Barra de navegação horizontal**********/
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 720px;
+  background: #fff url(../imagens/fundo-horizontal.png) repeat-x;
+  float: left;
+}
+
+ul li {
+  float: left;
+}
+
+ul a {
+  display: block;
+  padding: 0 2em;
+  line-height: 2.2em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../imagens/divisor.png) repeat-y le;
+}
+
+.primeiro {
+  background: none;
+}
+
+ul a:hover {
+  color: #085662;
+  background: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+  color: #085662;
+  background: #44cade;
 }
